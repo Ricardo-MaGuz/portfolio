@@ -1,9 +1,84 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Tag from "../components/Tag.astro";
+import Layout from "../layouts/Layout.astro";
+import SectionWrapper from "../components/SectionWrapper.astro";
+
+import LinkedInIcon from "../icons/LinkedInIcon.astro";
+import GitHubIcon from "../icons/GitHubIcon.astro";
+import EmailIcon from "../icons/EmailIcon.astro";
+import Timeline from "../components/Timeline.astro";
+import LapTopIcon from "../icons/LapTopIcon.astro";
 ---
 
-<Layout>
-	<main>
-
-	</main>
+<Layout
+  title='Ricardo MaGuz || Web Developer & Designer'
+  description=`Ricardo MaGuz: Web Developer and UI/UX Designer passionate about Front End. With fifteen years of experience.`
+>
+  <main class='px-2'>
+    <SectionWrapper id='about'>
+      <h1
+        class='text-[#1A212B] text-2xl lg:text-5xl font-bold flex justify-start lg:justify-center flex-row gap-x-4 pb-4'
+      >
+        Ricardo MaGuz <a
+          href='https://www.linkedin.com/in/ricardo-maguz/'
+          target='_new'
+          rel='noopener'
+          class='flex justify-center items-center'
+        >
+          <Tag>Available for hire</Tag>
+        </a>
+      </h1>
+      <p class='text-xl lg:text-2xl mb-2'>
+        I'm a <span class='text-[#0284c7] font-semibold'>Web Developer</span> and
+        <span class='text-[#0284c7] font-semibold'>UI/UX Designer</span> passionate
+        about <span class='text-[#0284c7] font-semibold'>Frontend</span>. Plus,
+        I have <span class='text-[#0284c7] font-semibold'>fifteen years</span> of
+        experience.
+      </p>
+      <ul class='flex gap-x-4 items-start flex-col md:flex-row'>
+        <li
+          class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+        >
+          <a
+            href='https://www.linkedin.com/in/ricardo-maguz/'
+            class='flex'
+            target='_blank'
+            rel='noopener'
+            ><LinkedInIcon class='size-6 mr-2' /> LinkedIn</a
+          >
+        </li>
+        <li
+          class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+        >
+          <a
+            href='https://github.com/Ricardo-MaGuz'
+            class='flex'
+            target='_blank'
+            rel='noopener'
+            ><GitHubIcon class='size-6 mr-2' />Github</a
+          >
+        </li>
+        <li
+          class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+        >
+          <a
+            href='mailto:maguz.ricardo@gmail.com'
+            class='flex'
+            target='_blank'
+            rel='noopener'
+            ><EmailIcon class='size-6 mr-2' />maguz.ricardo@gmail.com</a
+          >
+        </li>
+      </ul>
+    </SectionWrapper>
+    <SectionWrapper id='experience'>
+      <h2 class='flex items-center mb-6 text-3xl font-semibold gap-x'>
+        <LapTopIcon class='size-8' /> Work Experience
+      </h2>
+      <Timeline />
+    </SectionWrapper>
+    <SectionWrapper id='projects'>
+      <h2><LapTopIcon class='size-8' /> Projects</h2>
+    </SectionWrapper>
+  </main>
 </Layout>
