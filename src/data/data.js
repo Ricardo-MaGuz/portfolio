@@ -1,3 +1,15 @@
+import AngularIcon from "../components/icons/AngularIcon.astro";
+import GraphQLIcon from "../components/icons/GraphQLIcon.astro";
+
+export const TECHNOLOGIES = {
+  ANGULAR: {
+    icon: AngularIcon,
+  },
+  GRAPHQL: {
+    icon: GraphQLIcon,
+  },
+};
+
 export const TIMELINE_ITEMS = [
   {
     startDate: "2022",
@@ -77,3 +89,16 @@ export const TIMELINE_ITEMS = [
     bullets: [],
   },
 ];
+
+export const PROJECT_ITEMS = [
+  {
+    title: `Kavak`,
+    description: `Kavak main webpage`,
+    github: null,
+    imgUrl: ``,
+    stack: [TECHNOLOGIES.ANGULAR, TECHNOLOGIES.GRAPHQL],
+    url: `https://kavak.com`,
+  },
+];
+
+//`GraphQL`, `Nrwl`, `Stencil.js`, `Storybook`, `Sass`

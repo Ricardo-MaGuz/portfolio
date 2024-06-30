@@ -1,0 +1,58 @@
+---
+import SectionWrapper from "./SectionWrapper.astro";
+import EmailIcon from "./icons/EmailIcon.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
+import LinkedInIcon from "./icons/LinkedInIcon.astro";
+---
+
+<SectionWrapper id='about'>
+  <h1
+    class='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white'
+  >
+    Ricardo MaGuz
+  </h1>
+  <p
+    class='mt-6 text-xl text-gray-800 dark:[&>strong]:text-[#0284c7] [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300'
+  >
+    I'm a <strong>Web Developer</strong> and
+    <span class='text-[#0284c7] font-semibold'>UI/UX Designer</span> passionate about
+    <span class='text-[#0284c7] font-semibold'>Frontend</span>. Plus, I have <span
+      class='text-[#0284c7] font-semibold'>fifteen years</span
+    > of experience building accessible and engaging digital experiences.
+  </p>
+  <ul class='flex gap-x-4 items-start flex-col md:flex-row'>
+    <li
+      class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+    >
+      <a
+        href='https://www.linkedin.com/in/ricardo-maguz/'
+        class='flex'
+        target='_blank'
+        rel='noopener'
+        ><LinkedInIcon class='size-6 mr-2' /> LinkedIn</a
+      >
+    </li>
+    <li
+      class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+    >
+      <a
+        href='https://github.com/Ricardo-MaGuz'
+        class='flex'
+        target='_blank'
+        rel='noopener'
+        ><GitHubIcon class='size-6 mr-2' />Github</a
+      >
+    </li>
+    <li
+      class='flex justify-center items-center gap-x-2 py-2 px-4 opacity-70 hover:opacity-100 transition'
+    >
+      <a
+        href='mailto:maguz.ricardo@gmail.com'
+        class='flex'
+        target='_blank'
+        rel='noopener'
+        ><EmailIcon class='size-6 mr-2' />maguz.ricardo@gmail.com</a
+      >
+    </li>
+  </ul>
+</SectionWrapper>
